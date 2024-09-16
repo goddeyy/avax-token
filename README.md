@@ -21,11 +21,11 @@ To run this contract, you can use Remix, an online Solidity IDE. Follow these st
 
    ```solidity
    // SPDX-License-Identifier: UNLICENSED
-pragma solidity ^0.8.13;
+   pragma solidity ^0.8.13;
 
-import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+   import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
-contract GoddeyCoin is ERC20 {
+   contract GoddeyCoin is ERC20 {
     address public owner;
 
     modifier onlyOwner() {
@@ -50,7 +50,7 @@ contract GoddeyCoin is ERC20 {
         require(balanceOf(msg.sender) >= _amount, "Insufficient balance");
         _burn(msg.sender, _amount);
     }
-}
+   }
    ```
 
 4. **Compile the Code:**
